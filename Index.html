@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It's your special day Gemini Boy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex justify-center items-center h-screen"
+    style="
+      background-image: url(https://plus.unsplash.com/premium_vector-1727226489072-45bfcf5dba50?q=80&w=2224&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <div
+      class="border bg-white rounded-xl px-10 border-4 border-gray-300 py-8 shadow-lg shadow-blue-300 text-center animate__animated animate__backInDown m-8 w-80"
+      id="kartu"
+    >
+      <h1 class="text-3xl">Your'e special day</h1>
+      <h3
+        class="text-4xl font-bold text-blue-500 animate__animated animate__infinite animate__pulse"
+      >
+        Gemini Boy
+      </h3>
+      <button
+        href="ucapan.html"
+        class="animate__animated animate__delay-1s animate__tada p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full"
+        onclick="ubahKartu()"
+      >
+        Click Here
+      </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+      let kartu = document.getElementById("kartu");
+      function ubahKartu() {
+        kartu.innerHTML = `<h1 class="font-semibold text-wrap animate__animated animate__zoomIn">Haii Kanz ,
+
+        I’m grateful to have known u at tennis court hahaha. 
+        This is ur day u was born and I want to say, congrats ya kamu sudah surviving until now, melewati perjalanan hidup kamu yang berliku - liku, terkadang happy dan terkadang sedih wkwk, I’m proud of you! sampai akhirnya hari ini kamu sudah beranjak di umur 30th. 
+        Happy level up daayyy Muhammad Ammar Kanz, 
+        I hope this day will bring u lots of happiness and lucky.
+        Semoga kamu bisa melewati new journey yang lebih indah, semoga hal baik selalu beriringan dengan kamu, semangat berkarir dan jangan mudah menyerah, I know ur the strongest person I ever seen, and I hope u are always take ur healthy then u can achieve more achievements as ur wishlist, I will always support u hehe, semoga someday kamu bisa menjadi bapak dan suami untuk keluarga kamu, as your dream in the future life. you are really valuable to me and u are very special to me. You've been through a lot problem and you deserve to be happy on your special day! For now, enjoy your 30 yo Kanz, cheers 🎉🎂<h1>
+        <h2 class="mt-3 animate__animated animate__fadeIn">- Dari : Natasya Melinda D Putri - </h2>
+        <button onclick="refresh()" class="animate__animated animate__delay-1s animate__tada p-2 bg-slate-600 text-white rounded mt-5 hover:bg-slate-900 transition ease-in w-full">Tutup</button>
+          `;
+      }
+      confetti({
+        particleCount: 200,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+      function refresh() {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
